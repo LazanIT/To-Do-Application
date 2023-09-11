@@ -7,3 +7,17 @@
 body {
   background: linear-gradient(135deg, #153677, #4e085f);
 }
+.to-do-app {
+  max-width: 600px;
+  background-color: rgb(182, 122, 182);
+  border-radius: 10px;
+  margin: 100px auto 20px;
+}
+.to-do-app h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #4e085f;
+}
+.to-do-app img{
+  width: 15%;
+}
