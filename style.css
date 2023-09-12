@@ -11,7 +11,7 @@ body {
   max-width: 600px;
   background-color: rgb(182, 122, 182);
   border-radius: 10px;
-  margin: 100px auto 20px;
+  margin: 100px auto 0;
 }
 .to-do-app h2 {
   font-weight: bold;
@@ -35,7 +35,6 @@ body {
   font-weight: bolder;
   margin-left: 10px;
 }
-
 .row button {
   border: 1px solid slateblue;
   outline: none;
@@ -48,4 +47,35 @@ body {
 }
 .row button:hover {
   transform: translateX(5px);
+}
+.tasks-to-do {
+  max-width: 600px;
+  background: linear-gradient(150deg, #0853e7, #7f029e);
+  margin: 0 auto;
+}
+.tasks-to-do ul li {
+  font-size: 1.2rem;
+  user-select: none;
+  cursor: pointer;
+  padding: 15px 0 12px 50px;
+  position: relative;
+}
+.tasks-to-do ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(/Images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+.tasks-to-do ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+.tasks-to-do ul li.checked::before {
+  background-image: url(/Images/checked.png);
 }
