@@ -23,6 +23,7 @@ body {
 }
 .row {
   background: #edeef0;
+  border: 1px solid slateblue;
   border-radius: 30px;
 }
 .row input {
@@ -30,14 +31,21 @@ body {
   border: none;
   outline: none;
   background: transparent;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bolder;
+  margin-left: 10px;
 }
+
 .row button {
-  border: none;
+  border: 1px solid slateblue;
   outline: none;
   background: #ff5945;
   color: slateblue;
   font-size: 1rem;
   font-weight: bold;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.row button:hover {
+  transform: translateX(5px);
 }
