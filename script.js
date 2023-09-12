@@ -8,8 +8,22 @@ const addTaskBtn = document.querySelector("#addTask");
 // console.log(listGroup);
 // console.log(addTaskBtn);
 
-addTaskBtn.addEventListener("click", addTask());
-
 const addTask = () => {
-    
+  // console.log("Succes");
+
+  let alertText = document.querySelector("h5");
+
+  let li = document.createElement("li");
+  if (inputBox.value === "") {
+    alertText.innerHTML = "You need to type something!";
+    return;
+  } else {
+    if (alertText) {
+      alertText.remove;
+    }
+    li.innerHTML = inputBox.value;
+    listGroup.appendChild(li);
+  }
 };
+
+addTaskBtn.addEventListener("click", addTask);

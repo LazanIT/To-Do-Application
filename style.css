@@ -79,3 +79,7 @@ body {
 .tasks-to-do ul li.checked::before {
   background-image: url(/Images/checked.png);
 }
+h5{
+  font-weight: bolder;
+  font-size: 1rem;
+}
