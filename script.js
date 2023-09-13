@@ -55,4 +55,8 @@ const storageData = () => {
   //                      name      value
   localStorage.setItem("data", listGroup.innerHTML);
 };
-const showData = () => {};
+const showData = () => {
+  listGroup.innerHTML = localStorage.getItem("data");
+};
+
+showData();
