@@ -50,7 +50,7 @@ body {
 }
 .tasks-to-do {
   max-width: 600px;
-  background:  rgb(182, 122, 182);
+  background: rgb(182, 122, 182);
   margin: 0 auto;
 }
 .tasks-to-do ul li {
@@ -83,4 +83,22 @@ body {
 h5 {
   font-weight: bolder;
   font-size: 1rem;
+}
+.tasks-to-do ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 50px;
+  font-size: 2rem;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  margin: 2px;
+  transition: all 0.4s ease-in;
+  background: slateblue;
+  border-radius: 10px;
+}
+.tasks-to-do ul li span:hover {
+  background: rgb(157, 65, 218);
+  border-radius: 50%;
 }

@@ -14,6 +14,7 @@ const addTask = () => {
   let alertText = document.querySelector("h5");
 
   let li = document.createElement("li");
+  let span = document.createElement("span");
   if (inputBox.value === "") {
     alertText.innerHTML = "You need to type something!";
     return;
@@ -24,8 +25,23 @@ const addTask = () => {
     i++;
     li.innerHTML = `Task ${i} : ${inputBox.value}`;
     listGroup.appendChild(li);
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
   }
   inputBox.value = "";
 };
 
 addTaskBtn.addEventListener("click", addTask);
+
+listGroup.addEventListener(
+  "click",
+  (event) => {
+    // console.log(event);
+    if (event.target.tagName === "LI") {
+      event.target.classList.toggle("checked");
+    } else if (event.target.tagName === "SPAN") {
+      event.target.parentElement.remove();
+    }
+  },
+  false
+);
