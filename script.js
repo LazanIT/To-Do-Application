@@ -7,7 +7,7 @@ const addTaskBtn = document.querySelector("#addTask");
 // console.log(inputBox);
 // console.log(listGroup);
 // console.log(addTaskBtn);
-
+let i = 0;
 const addTask = () => {
   // console.log("Succes");
 
@@ -19,11 +19,13 @@ const addTask = () => {
     return;
   } else {
     if (alertText) {
-      alertText.remove;
+      alertText.remove();
     }
-    li.innerHTML = inputBox.value;
+    i++;
+    li.innerHTML = `Task ${i} : ${inputBox.value}`;
     listGroup.appendChild(li);
   }
+  inputBox.value = "";
 };
 
 addTaskBtn.addEventListener("click", addTask);
