@@ -44,6 +44,7 @@ body {
   font-weight: bold;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
+  text-transform: capitalize;
 }
 .row button:hover {
   transform: translateX(5px);
@@ -60,6 +61,8 @@ body {
   padding: 15px 0 12px 50px;
   position: relative;
   list-style-type: none;
+  font-weight: bold;
+  color: #4e085f;
 }
 .tasks-to-do ul li::before {
   content: "";
@@ -70,8 +73,8 @@ body {
   background-image: url(/Images/unchecked.png);
   background-size: cover;
   background-position: center;
-  top: 12px;
-  left: 8px;
+  top: 13px;
+  left: 10px;
 }
 .tasks-to-do ul li.checked {
   color: #555;
@@ -93,12 +96,12 @@ h5 {
   color: #555;
   line-height: 40px;
   text-align: center;
-  margin: 2px;
+  margin: 5px;
   transition: all 0.4s ease-in;
-  background: slateblue;
+  background: #ff5945;
   border-radius: 10px;
 }
 .tasks-to-do ul li span:hover {
-  background: rgb(157, 65, 218);
-  border-radius: 50%;
+  background: rgb(247, 148, 1);
+  border-radius: 15px;
 }
