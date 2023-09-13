@@ -37,11 +37,17 @@ listGroup.addEventListener(
   "click",
   (event) => {
     // console.log(event);
+    // Proveravamo da je tagName li
     if (event.target.tagName === "LI") {
-      event.target.classList.toggle("checked");
-    } else if (event.target.tagName === "SPAN") {
-      event.target.parentElement.remove();
+      event.target.classList.toggle("checked"); // Ako jeste dodajemo mu klasu "checked"
+    } // Proveravamo da li je tagName span
+    else if (event.target.tagName === "SPAN") {
+      event.target.parentElement.remove(); // Ako jeste na X sklanjamo zavrseni zadatak
     }
   },
-  false
+  false // Pomocu false omogucavamo da se unutrasnji elementi sire ka spoljasnjim
 );
+
+const storageData = () => {
+  
+};
