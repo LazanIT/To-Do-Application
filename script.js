@@ -46,6 +46,7 @@ listGroup.addEventListener(
     else if (event.target.tagName === "SPAN") {
       event.target.parentElement.remove(); // Ako jeste na X sklanjamo zavrseni zadatak
       storageData();
+      i--;
     }
   },
   false // Pomocu false omogucavamo da se unutrasnji elementi sire ka spoljasnjim
