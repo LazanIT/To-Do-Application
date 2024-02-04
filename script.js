@@ -37,19 +37,17 @@ addTaskBtn.addEventListener("click", addTask);
 listGroup.addEventListener(
   "click",
   (event) => {
-    // console.log(event);
-    // Proveravamo da je tagName li
     if (event.target.tagName === "LI") {
-      event.target.classList.toggle("checked"); // Ako jeste dodajemo mu klasu "checked"
+      event.target.classList.toggle("checked");
       storageData();
     } // Proveravamo da li je tagName span
     else if (event.target.tagName === "SPAN") {
-      event.target.parentElement.remove(); // Ako jeste na X sklanjamo zavrseni zadatak
+      event.target.parentElement.remove(); //
       storageData();
       i--;
     }
   },
-  false // Pomocu false omogucavamo da se unutrasnji elementi sire ka spoljasnjim
+  false
 );
 
 const storageData = () => {
