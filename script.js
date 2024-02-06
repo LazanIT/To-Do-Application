@@ -33,9 +33,8 @@ listGroup.addEventListener(
     if (event.target.tagName === "LI") {
       event.target.classList.toggle("checked");
       storageData();
-    } // Proveravamo da li je tagName span
-    else if (event.target.tagName === "SPAN") {
-      event.target.parentElement.remove(); //
+    } else if (event.target.tagName === "SPAN") {
+      event.target.parentElement.remove();
       storageData();
       i--;
     }
@@ -44,7 +43,6 @@ listGroup.addEventListener(
 );
 
 const storageData = () => {
-  //                      name      value
   localStorage.setItem("data", listGroup.innerHTML);
 };
 const showData = () => {
